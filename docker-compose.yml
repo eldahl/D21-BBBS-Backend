@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bbbsbackend:
+    image: ${DOCKER_REGISTRY-}bbbsbackend
+    build:
+      context: .
+      dockerfile: BBBSBackend/Dockerfile
